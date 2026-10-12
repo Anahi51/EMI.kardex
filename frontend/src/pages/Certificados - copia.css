@@ -1,0 +1,50 @@
+/* Certificados Styles */
+.cert-feature-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.cert-feature {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 20px 16px;
+  text-align: center;
+  transition: all var(--transition-normal);
+}
+
+.cert-feature:hover {
+  border-color: var(--border-medium);
+  transform: translateY(-2px);
+}
+
+.cert-feature-title {
+  font-weight: 700;
+  font-size: 13px;
+  margin: 10px 0 6px;
+  color: var(--text-primary);
+}
+
+.cert-feature-desc {
+  font-size: 11px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.cert-generate-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(46, 204, 113, 0.06);
+  border: 1px solid rgba(46, 204, 113, 0.15);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  font-size: 12px;
+  color: var(--color-chain-300);
+  margin-top: 8px;
+}
+
+@media (max-width: 900px) {
+  .cert-feature-cards { grid-template-columns: repeat(2, 1fr); }
+}

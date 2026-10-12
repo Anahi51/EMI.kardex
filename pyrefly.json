@@ -1,0 +1,6 @@
+{
+  "search_path": [
+    "backend-django",
+    "backend-django/venv/Lib/site-packages"
+  ]
+}
