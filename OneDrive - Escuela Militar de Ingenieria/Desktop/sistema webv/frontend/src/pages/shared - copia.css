@@ -1,0 +1,60 @@
+/* ================================================================
+ * ARCHIVO: shared.css
+ * MÓDULO:  Estilos Compartidos entre Páginas
+ * SISTEMA: EMI - Sistema de Gestión Académica con Blockchain
+ * ================================================================
+ *
+ * DESCRIPCIÓN:
+ *   Hoja de estilos con clases reutilizables para alertas/mensajes
+ *   de retroalimentación al usuario. Se importa en cualquier página
+ *   que necesite mostrar mensajes de éxito o error.
+ *
+ * CLASES DISPONIBLES:
+ *   .alert-success → Mensaje de confirmación (verde)
+ *   .alert-error   → Mensaje de error (rojo)
+ *
+ * ROLES QUE VEN ESTOS ESTILOS:
+ *   Todos los roles del sistema cuando realizan acciones que
+ *   generan feedback visual (guardar, eliminar, verificar, etc.)
+ *
+ * USO EN COMPONENTES:
+ *   <div className="alert-success">✓ Operación exitosa</div>
+ *   <div className="alert-error">✗ Ocurrió un error</div>
+ *
+ * ================================================================ */
+
+/* -------------------------------------------------------
+ * .alert-success
+ * Estilo para mensajes de éxito o confirmación.
+ * Fondo verde semitransparente con borde verde suave.
+ * Usado al: guardar datos, emitir certificados, verificar hashes.
+ * ------------------------------------------------------- */
+.alert-success {
+  display: flex;           /* Alinea ícono y texto en fila */
+  align-items: center;     /* Centra verticalmente */
+  gap: 10px;               /* Espacio entre ícono y texto */
+  background: rgba(46, 204, 113, 0.1);     /* Verde suave semitransparente */
+  border: 1px solid rgba(46, 204, 113, 0.25); /* Borde verde con opacidad */
+  border-radius: var(--radius-md);         /* Bordes redondeados del sistema */
+  padding: 12px 16px;      /* Espacio interno cómodo */
+  font-size: 13px;         /* Tamaño de fuente compacto */
+  color: var(--color-chain-300); /* Color de texto verde del sistema */
+}
+
+/* -------------------------------------------------------
+ * .alert-error
+ * Estilo para mensajes de error o advertencia.
+ * Fondo rojo semitransparente con borde rojo suave.
+ * Usado al: fallar una validación, error de conexión, acceso denegado.
+ * ------------------------------------------------------- */
+.alert-error {
+  display: flex;           /* Alinea ícono y texto en fila */
+  align-items: center;     /* Centra verticalmente */
+  gap: 10px;               /* Espacio entre ícono y texto */
+  background: rgba(231, 76, 60, 0.1);      /* Rojo suave semitransparente */
+  border: 1px solid rgba(231, 76, 60, 0.25);  /* Borde rojo con opacidad */
+  border-radius: var(--radius-md);         /* Bordes redondeados del sistema */
+  padding: 12px 16px;      /* Espacio interno cómodo */
+  font-size: 13px;         /* Tamaño de fuente compacto */
+  color: var(--color-danger-400); /* Color de texto rojo del sistema */
+}

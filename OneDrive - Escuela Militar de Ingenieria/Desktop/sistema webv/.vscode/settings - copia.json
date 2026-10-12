@@ -1,0 +1,15 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/backend-django/venv/Scripts/python.exe",
+  "python.interpreterPath": "${workspaceFolder}/backend-django/venv/Scripts/python.exe",
+  "pyrefly.interpreterPath": "${workspaceFolder}/backend-django/venv/Scripts/python.exe",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/backend-django",
+    "${workspaceFolder}/backend-django/venv/Lib/site-packages"
+  ],
+  "pyrefly.extraPaths": [
+    "${workspaceFolder}/backend-django",
+    "${workspaceFolder}/backend-django/venv/Lib/site-packages"
+  ],
+  "python.analysis.typeCheckingMode": "basic"
+}
+

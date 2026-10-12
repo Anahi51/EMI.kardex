@@ -1,0 +1,9 @@
+{
+  "venvPath": "backend-django",
+  "venv": "venv",
+  "extraPaths": [
+    "backend-django",
+    "backend-django/venv/Lib/site-packages"
+  ],
+  "typeCheckingMode": "basic"
+}

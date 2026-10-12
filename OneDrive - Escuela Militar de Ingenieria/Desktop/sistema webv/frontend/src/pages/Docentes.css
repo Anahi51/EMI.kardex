@@ -1,0 +1,465 @@
+/* ============================================================
+   Docentes Detail Styles - Theme EMI Digital
+   ============================================================ */
+
+.btn-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  color: var(--color-gold-400);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 0;
+  transition: all var(--transition-fast);
+}
+
+.btn-back-link:hover {
+  color: var(--color-gold-300);
+  transform: translateX(-2px);
+}
+
+.doc-detail-header-card {
+  background: rgba(13, 23, 38, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.doc-detail-avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-shrink: 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.doc-detail-main-info {
+  flex: 1;
+}
+
+.doc-detail-name {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.doc-detail-title-sub {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+.doc-detail-univ {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.doc-detail-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.doc-detail-meta-box {
+  background: rgba(6, 13, 24, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 220px;
+}
+
+.doc-meta-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 11px;
+}
+
+.doc-meta-label {
+  color: var(--text-muted);
+}
+
+.doc-meta-val {
+  color: var(--text-primary);
+}
+
+/* Info Cards in Detail Tab */
+.doc-info-card {
+  background: rgba(13, 23, 38, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 20px 24px;
+}
+
+.doc-info-card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-bottom: 12px;
+}
+
+.doc-info-card-header h3 {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.doc-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 24px;
+}
+
+.doc-info-grid.grid-2-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.doc-info-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.doc-info-label {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.doc-info-value {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+@media (max-width: 1024px) {
+  .doc-detail-header-card {
+    flex-direction: column;
+  }
+  .doc-detail-header-right {
+    align-items: flex-start;
+    width: 100%;
+  }
+  .doc-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   Estudiantes - Documentacion Tab (Admin Table View)
+   ============================================================ */
+
+.est-docs-section-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.est-docs-section-title {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+}
+.est-docs-section-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 0;
+}
+.est-docs-table-wrapper {
+  background: rgba(6, 13, 24, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+}
+.est-docs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.est-docs-table thead tr {
+  background: rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+.est-docs-table thead th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.est-docs-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  transition: background 0.15s;
+}
+.est-docs-table tbody tr:last-child { border-bottom: none; }
+.est-docs-table tbody tr:hover { background: rgba(255, 255, 255, 0.03); }
+.est-docs-table td {
+  padding: 13px 16px;
+  vertical-align: middle;
+  color: var(--text-primary);
+}
+.est-docs-num-cell {
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+.est-docs-doc-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.est-docs-doc-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: rgba(201, 162, 39, 0.12);
+  border: 1px solid rgba(201, 162, 39, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c9a227;
+  flex-shrink: 0;
+}
+.est-docs-doc-name {
+  font-weight: 500;
+  color: var(--text-primary);
+  font-size: 13px;
+}
+.est-docs-filename {
+  font-size: 11.5px;
+  color: var(--text-secondary);
+  font-family: monospace;
+}
+.est-docs-date {
+  font-size: 12px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+.est-docs-verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(46, 204, 113, 0.12);
+  border: 1px solid rgba(46, 204, 113, 0.3);
+  color: #2ecc71;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.est-docs-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.est-docs-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.est-docs-action-btn:hover {
+  background: rgba(201, 162, 39, 0.15);
+  border-color: rgba(201, 162, 39, 0.3);
+  color: #c9a227;
+  transform: scale(1.05);
+}
+.est-docs-action-btn.download-btn:hover {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.4);
+  color: #34d399;
+}
+.est-docs-footer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: rgba(46, 204, 113, 0.08);
+  border: 1px solid rgba(46, 204, 113, 0.2);
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  padding: 12px 20px;
+  flex-wrap: wrap;
+}
+.est-docs-footer-msg {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  color: #2ecc71;
+  font-weight: 500;
+}
+.est-docs-footer-count {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  white-space: nowrap;
+}
+.est-docs-count-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(46, 204, 113, 0.2);
+  border: 1px solid rgba(46, 204, 113, 0.4);
+  color: #2ecc71;
+}
+
+/* ============================================================
+   Docentes - Documentos Summary Footer Box (Reference Image Exact Match)
+   ============================================================ */
+
+.doc-section-icon-box {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.docente-footer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: linear-gradient(135deg, rgba(16, 45, 32, 0.95), rgba(9, 28, 20, 0.95));
+  border: 1px solid rgba(46, 204, 113, 0.25);
+  border-top: none;
+  border-radius: 0 0 14px 14px;
+  padding: 16px 24px;
+  margin-top: 0;
+}
+
+.docente-footer-msg {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.docente-check-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #2ecc71;
+  color: #06110a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(46, 204, 113, 0.3);
+}
+
+.docente-footer-title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.docente-footer-sub {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.docente-footer-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.docente-count-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.docente-count-num {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+}
+
+.docente-count-label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: capitalize;
+}
+
+.docente-percent-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(46, 204, 113, 0.15);
+  border: 2px solid #2ecc71;
+  color: #2ecc71;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(46, 204, 113, 0.2);
+}
+
+@media (max-width: 768px) {
+  .docente-footer-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .docente-footer-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .docente-count-text {
+    align-items: flex-start;
+  }
+}
